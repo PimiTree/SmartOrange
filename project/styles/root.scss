@@ -1,3 +1,32 @@
 :root {
+    //    colors
+    --palette1: #333333;
+    --palette2: #BDBDBD;
+    --palette3: #000000;
+    --palette4: #F2F2F2;
+    --palette5: #F3F3F3;
+    --palette6: #8D8D8D;
+    --palette7: #C30000;
+    --palette8: #FFFFFF;
 
+
+    --header-main-color: var(--palette2);
+    --header-secondary-color: var(--palette1);
+    --header-contast-color: var(--palette1);
+
+    --main-text-color: var(--palette3);
+    --contrast-text-color: var(--palette8);
+    --warn-text-color: var(--palette7);
+
+    --main-button-text-color: var(--palette1);
+    --main-button-bg-color: var(--palette1);
+    --contrast-button-bg-color: var(--palette8);
+
+    --slider-label-color: var(--palette2);
+
+    --task-number-color: var(--palette4);
+
+    --form-elem-bg: var(--palette5);
+    --form-palaceholder-text-color: var(--palette6);
 }
+
