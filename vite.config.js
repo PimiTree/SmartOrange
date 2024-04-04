@@ -13,11 +13,14 @@ export default defineConfig ({
         rollupOptions : {
             output: {
                 assetFileNames: ({name}) => {
-                    if (/\.(gif|jpe?g|png|webp)$/.test(name ?? '')) {
+                    if (/\.(gif|jpe?g|png|webp|ico)$/.test(name ?? '')) {
                         return 'img/[name][extname]'
                     }
                     if (/\.css$/.test(name ?? '')) {
                         return 'css/[name][extname]'
+                    }
+                    if (/\.(oet|woff2|woff|ttf|otf)$/.test(name ?? '')) {
+                        return 'fonts/[name][extname]'
                     }
                     return '[name][extname]'
                 },

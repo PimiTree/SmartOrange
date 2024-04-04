@@ -1,0 +1,26 @@
+.sct-tasks {
+    &-container {
+        margin-top: 62px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &-wrapper {
+        display: flex;
+        gap: 33px;
+        &:nth-child(1) {
+            width: 65%;
+        }
+    }
+    &-number {
+        font-family: "SF Pro Display", sans-serif;
+        color: var(--task-block-number-color);
+        font-size: 200px;
+        font-weight: 700;
+        line-height: 162px;
+    }
+    &-text {
+        color: var(--task-block-text-color);
+        font-size: 22px;
+        line-height: 40px;
+    }
+}
