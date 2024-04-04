@@ -1,0 +1,71 @@
+.sct-contacts {
+    &-wrapper {
+        margin-top: 22px;
+        display: flex;
+        .img-container {
+            flex-grow: 1;
+            width: auto;
+            height: auto;
+        }
+    }
+    &-form {
+        position: relative;
+        width: 400px;
+        margin-right: 30px;
+        &-el-wrapper {
+            margin-top: 20px;
+            position: relative;
+            label {
+                position: absolute;
+                top: 14px;
+                left: 21px;
+                color: var(--contacts-block-label-color);
+                font-size: 14px;
+                letter-spacing: 0.04rem;
+                cursor: text;
+                span {
+                    color: var(--warn-text-color);
+                }
+            }
+            input, textarea {
+                width: 100%;
+                font-size: 16px;
+                font-family: "TT Hoves", sans-serif;
+                &:focus ~ label {
+                    display: none;
+                }
+            }
+            textarea {
+                height: 147px;
+            }
+            .error-message {
+                position: absolute;
+                left: 22px;
+                bottom: -17px;
+                color: var(--warn-text-color);
+            }
+        }
+    }
+    .form-elem {
+        padding: 14px 22px;
+        background-color: var(--form-elem-bg);
+    }
+    &-warning {
+        margin-top: 22px;
+        width: 400px;
+    }
+    .sct-button {
+        margin-top: 22px;
+        position: relative;
+        color: var(--contrast-text-color);
+        background-color: var(--main-button-bg-color);
+        cursor: pointer;
+        &:disabled {
+            opacity: 0.4;
+            &:hover {
+                opacity: 0.4;
+            }
+        }
+    }
+
+}
